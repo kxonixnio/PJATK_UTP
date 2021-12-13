@@ -1,0 +1,42 @@
+Wyniki testów zachowania - zmniejszenie punktacji = -6
+
+GDY: Utworzono obiekt Finder
+
+  - wyszukiwanie if - zle wyniki, gdy kod = 
+{
+if (a > b) d = "wariant"; int pif; int piiif; int ifxxx; int ifc; if(a>b)if(c>d) x = 1;
+}
+
+  ( String index out of range: -8 )
+  > zmniejszenie punktacji = -3
+
+
+GDY: Utworzono obiekt Finder
+
+  - wyszukiwanie if - zle wyniki, gdy instrukcja if jest w cudzyslowie; kod = 
+{
+"if (a>b) c = 1;"; "if(a)c=1;", " if (a>b) c = 1;"; " if(a)c=1;"
+}
+
+  ( String index out of range: -12 )
+  > zmniejszenie punktacji = -1
+
+
+GDY: Utworzono obiekt Finder
+
+  - wyszukiwanie ciągów wariant - zle wyniki, gdy kod =  
+
+if (a>b) c = 1; d = "wariantwariantwariant" //subwariant
+
+  ( expected 4 but was 1 )
+  > zmniejszenie punktacji = -1
+
+
+GDY: Utworzono obiekt Finder
+
+  - wyszukiwanie ciągów wariant - zle wyniki, gdy kod =  
+
+if (a>b) c = 1; d = "wariant"; e= "wariant"; f = "wariant wariant";
+
+  ( expected 4 but was 1 )
+  > zmniejszenie punktacji = -1
