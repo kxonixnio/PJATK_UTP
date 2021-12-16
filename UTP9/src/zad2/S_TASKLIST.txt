@@ -1,0 +1,2 @@
+Napisać program, w którym uruchamiane zadania pokazywane są na liście javax.swing.JList. Zadania z listy możemy odpytywac o ich stan, anulować, pokazywac ich wyniki, gdy są gotowe itp.
+Zadania winny być realziowane jako Future.
